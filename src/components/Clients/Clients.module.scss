@@ -1,0 +1,91 @@
+.clients {
+    background-image: url("../../assets/clinets_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-top: 200px;
+
+    &__title {
+        border-left: 6px solid #fff;
+        padding-left: 10px;
+        margin-bottom: 110px;
+
+        h3 {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            line-height: 109.182%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        max-width: 347px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:1012px) {
+    .clients {
+        &__title {
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media(max-width:846px) {
+    .clients {
+        &__inner {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media(max-width:727px) {
+    .clients {
+        &__item {
+            max-width: 280px;
+        }
+    }
+}
+@media(max-width:606px) {
+    .clients {
+        margin-top: 50px;
+        &__item {
+            max-width: 250px;
+        }
+    }
+}
+@media(max-width:533px) {
+    .clients {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__item {
+            max-width: 280px;
+        }
+    }
+}
