@@ -134,6 +134,10 @@
         display: flex;
         gap: 20px;
 
+        &-mobile {
+            display: none;
+        }
+
         &-prays {
             background-color: #1A4570;
             width: 164px;
@@ -253,20 +257,43 @@
             width: 200px;
         }
 
+        &__nav {
+            &-content {
+                flex-direction: column;
+            }
+
+            &.active {
+                height: 400px;
+    
+            }
+        }
+
         &__contact {
             display: none;
             align-items: center;
+            &-mobile {
+                display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+            }
 
             &-prays {
                 width: 120px;
                 height: 45px;
                 font-size: 14px;
+                background-color: #fff;
+                color: #1A4570;
             }
 
             &-social {
                 width: 40px;
                 height: 40px;
                 font-size: 18px;
+                background-color: #fff;
+                color: #1A4570;
             }
         }
 
@@ -278,30 +305,36 @@
 
 @media(max-width:779px) {
     .header {
+
         &__nav {
+            &-hover {
+                display: none;
+            }
             &-title {
                 font-size: 20px;
                 margin-bottom: 8px;
             }
 
             &-menu {
-                gap: 20px;
+                gap: 5px;
+                flex-direction: column;
 
                 li {
                     a {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
 
             &.active {
-                height: 250px;
+                height: 380px;
 
             }
 
             &-content {
                 flex-direction: column;
-                gap: 40px;
+                // gap: 40px;
+                
 
             }
         }
@@ -315,30 +348,6 @@
         }
     }
 
-    .header {
-
-        &__nav {
-            &-hover {
-                display: none;
-            }
-
-            &-menu {
-                gap: 5px;
-                flex-direction: column;
-
-                li {
-                    a {
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            &-content {
-                gap: 10px;
-
-            }
-        }
-    }
 }
 
 @media(max-width:388px) {

@@ -58,7 +58,8 @@ const HeaderMenu = () => {
 					<h2 className={classes['header__nav-title']}>Sayt menyusi</h2>
 					<div className={classes['header__nav-content']}>
 						<ul className={classes['header__nav-menu']}>
-							<li><Link to="/services/buxgalteriya" className={classes['header__nav-link']}>Biz haqimizda</Link></li>
+							<li><Link to="/" className={classes['header__nav-link']}>Bosh sahifa</Link></li>
+							<li><Link to="/about" className={classes['header__nav-link']}>Biz haqimizda</Link></li>
 							<li onMouseEnter={() => setHoverDiv(true)} onMouseLeave={() => setHoverDiv(false)}>
 								<Link to="/services/buxgalteriya" className={classes['header__nav-link']}>Xizmatlar</Link>
 								{<div className={hoverDiv == true ? classNames(classes['header__nav-hover'], classes['active']) : classes['header__nav-hover']}>
@@ -80,10 +81,23 @@ const HeaderMenu = () => {
 									</ul>
 								</div>}
 							</li>
-							<li><a href="#!" className={classes['header__nav-link']}>Blog</a></li>
-							<li><a href="#!" className={classes['header__nav-link']}>Yangiliklar</a></li>
-							<li><a href="#!" className={classes['header__nav-link']}>Aloqa</a></li>
+							<li><Link to="#!" className={classes['header__nav-link']}>Blog</Link></li>
+							<li><Link to="/news" className={classes['header__nav-link']}>Yangiliklar</Link></li>
+							<li><Link to="/contact" className={classes['header__nav-link']}>Aloqa</Link></li>
+							
 						</ul>
+						<div className={classes['header__contact-mobile']}>
+							<a href="#!" className={classes['header__contact-prays']}>Prays list</a>
+							<a href="#!" className={classNames(classes['header__contact-instagram'], classes['header__contact-social'])}>
+								<FontAwesomeIcon icon={faInstagram} />
+							</a>
+							<a href="#!" className={classNames(classes['header__contact-telegram'], classes['header__contact-social'])}>
+								<FontAwesomeIcon icon={faTelegram} />
+							</a>
+							<a href="#!" className={classNames(classes['header__contact-facebook'], classes['header__contact-social'])}>
+								<FontAwesomeIcon icon={faFacebook} />
+							</a>
+						</div>
 						<div className={classes['header__nav-language']}>
 							<ul>
 								<li>RU</li>

@@ -13,11 +13,11 @@ const Footer = ({setModal}) => {
 					</div>
 					<div className={classes['footer__nav']}>
 						<ul>
-							<li>О нас</li>
-							<li>Услуги</li>
-							<li>Блог</li>
-							<li>Новости</li>
-							<li>Контакты</li>
+							<li>Biz haqimizda</li>
+							<li>Xizmatlar</li>
+							<li>Blog</li>
+							<li>Yangiliklar</li>
+							<li>Aloqa</li>
 						</ul>
 					</div>
 					<div className={classes['footer__phone']}>
