@@ -3,13 +3,22 @@ import Container from '../../layout/Container';
 import HeaderMenu from '../../components/HeaderMenu';
 import Footer from '../../components/Footer';
 
+import ScrollTrigger from 'react-scroll-trigger';
+import CountUp from 'react-countup';
+
 import countIcon from '../../assets/about-count.png';
+import countIcon2 from '../../assets/about-count-2.png';
+import countIcon3 from '../../assets/about-count-3.png';
+import countIcon4 from '../../assets/about-count-4.png';
+import countIcon5 from '../../assets/about-count-5.png';
 import girl from '../../assets/about-girl.png';
 import aboutTeam from '../../assets/about-team.png';
 
 import classes from './About.module.scss';
 
 const About = () => {
+
+	const [counterOn, setCounterOn] = React.useState(false);
 	return (
 		<>
 			<HeaderMenu />
@@ -100,53 +109,94 @@ const About = () => {
 						</div>
 					</div>
 
-					 <div className={classes['about__counter']}>
+					<div className={classes['about__counter']}>
 						<div className={classes['about__counter-block']}>
 							<div className={classes['about__counter-icon']}>
 								<img src={countIcon} alt="" />
 							</div>
+
 							<div className={classes['about__counter-texts']}>
-								<div className={classes['about__counter-number']}>1000+</div>
+								<div className={classes['about__counter-number']}>
+									<ScrollTrigger onEnter={() => setCounterOn(true)}>
+										<span>
+											{counterOn && <CountUp duration={10} end={1000} />}
+											+
+										</span>
+									</ScrollTrigger>
+
+								</div>
 								<p className={classes['abut__counter-text']}>Mijozlar soni</p>
 							</div>
 						</div>
 
 						<div className={classes['about__counter-block']}>
 							<div className={classes['about__counter-icon']}>
-								<img src={countIcon} alt="" />
+								<img src={countIcon2} alt="" />
 							</div>
 							<div className={classes['about__counter-texts']}>
-								<div className={classes['about__counter-number']}>1000+</div>
+								<div className={classes['about__counter-number']}>
+									<ScrollTrigger onEnter={() => setCounterOn(true)}>
+										<span>
+											{counterOn && <CountUp duration={10} end={1000} />}
+											+
+										</span>
+									</ScrollTrigger>
+
+								</div>
 								<p className={classes['abut__counter-text']}>Mijozlar soni</p>
 							</div>
 						</div>
 
 						<div className={classes['about__counter-block']}>
 							<div className={classes['about__counter-icon']}>
-								<img src={countIcon} alt="" />
+								<img src={countIcon3} alt="" />
 							</div>
 							<div className={classes['about__counter-texts']}>
-								<div className={classes['about__counter-number']}>1000+</div>
+								<div className={classes['about__counter-number']}>
+									<ScrollTrigger onEnter={() => setCounterOn(true)}>
+										<span>
+											{counterOn && <CountUp duration={10} end={1000} />}
+											+
+										</span>
+									</ScrollTrigger>
+
+								</div>
 								<p className={classes['abut__counter-text']}>Mijozlar soni</p>
 							</div>
 						</div>
 
 						<div className={classes['about__counter-block']}>
 							<div className={classes['about__counter-icon']}>
-								<img src={countIcon} alt="" />
+								<img src={countIcon4} alt="" />
 							</div>
 							<div className={classes['about__counter-texts']}>
-								<div className={classes['about__counter-number']}>1000+</div>
+								<div className={classes['about__counter-number']}>
+									<ScrollTrigger onEnter={() => setCounterOn(true)}>
+										<span>
+											{counterOn && <CountUp duration={10} end={1000} />}
+											+
+										</span>
+									</ScrollTrigger>
+
+								</div>
 								<p className={classes['abut__counter-text']}>Mijozlar soni</p>
 							</div>
 						</div>
 
 						<div className={classes['about__counter-block']}>
 							<div className={classes['about__counter-icon']}>
-								<img src={countIcon} alt="" />
+								<img src={countIcon5} alt="" />
 							</div>
 							<div className={classes['about__counter-texts']}>
-								<div className={classes['about__counter-number']}>1000+</div>
+								<div className={classes['about__counter-number']}>
+									<ScrollTrigger onEnter={() => setCounterOn(true)}>
+										<span>
+											{counterOn && <CountUp duration={10} end={1000} />}
+											+
+										</span>
+									</ScrollTrigger>
+
+								</div>
 								<p className={classes['abut__counter-text']}>Mijozlar soni</p>
 							</div>
 						</div>
