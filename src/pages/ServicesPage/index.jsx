@@ -12,6 +12,7 @@ import Hr from '../../routes/Hr';
 import DavlarHaridlar from '../../routes/DavlatHaridlar';
 import Matbaa from '../../routes/Matbaa';
 import Mamlakat from '../../routes/Mamlakat';
+import Footer from '../../components/Footer';
 const ServicesPages = () => {
 	const { type } = useParams();
 	const [accordion, setAccordion] = React.useState(false);
@@ -111,6 +112,7 @@ const ServicesPages = () => {
 					</div>
 				</div>
 			</Container>
+			<Footer/>
 		</>
 	);
 };
