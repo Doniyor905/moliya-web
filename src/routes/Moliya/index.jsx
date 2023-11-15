@@ -4,7 +4,7 @@ const Moliya = () => {
 	return (
 		<>
 			<div className='services__content'>
-				<h2 className='services__content-title'>Tovarlarning elektron deklaratsiyasi</h2>
+				<h2 className='services__content-title'>Moliyaviy va iqtisodiy yordam xizmatlari</h2>
 
 				<div className='services__content-service'>
 					<ul>

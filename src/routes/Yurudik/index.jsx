@@ -4,13 +4,13 @@ const Yurudik = () => {
 	return (
 		<>
 			<div className='services__content'>
-				<h2 className='services__content-title'>Yuridik xizmatlar</h2>
-				<p className='services__content-text'>
+				{/* <h2 className='services__content-title'>Yuridik xizmatlar</h2> */}
+				{/* <p className='services__content-text'>
 					Biz mas’uliyatni o’z zimmamizga olamiz va mijozlarni yolg’iz qoldirmaymiz
 					Bizga ishonishadi va bizni tavsiya qilishadi. Biz sizninig vaqtingizni, asablaringizni va albatta pulingizni himoya qilamiz!
 					Biz har qanday tekshiruv vaqtida sizga hamrohlik qilamiz va sizga yordam beramiz.
 					Sizning manfaatlaringizni himoya qilamiz va davlat organlarining harakatlarini qayd etamiz.
-				</p>
+				</p> */}
 
 				<h3 className='services__content-subtitle'>«Yuridik xizmati» xizmat turiga nimalar kiradi:</h3>
 

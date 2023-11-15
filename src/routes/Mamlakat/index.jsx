@@ -5,11 +5,11 @@ const Mamlakat = () => {
 		<>
 			<div className='services__content'>
 				<h2 className='services__content-title'>Mamlakat ichida va tashqirida logistika xizmati</h2>
-				<p className='services__content-text'>
+				{/* <p className='services__content-text'>
                     Biz o'z mijozlarimiz va hamkorlarimizni qadrlaymiz va yuk tashish bilan bog'liq har qanday masalalarda
                     yordam berishga, ushbu sohada malakali maslahatlar berishga va yuk tashish uchun yanada
                     qulay shartlarni taklif qilishga tayyormiz.
-				</p>
+				</p> */}
 
 				<div className='services__content-service'>
 					<ul>
